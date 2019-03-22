@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_night">
+
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/josefinsans_regular"
+        android:text="10:00am"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="230dp"
+        android:layout_height="180dp"
+        android:scaleX="1.2"
+        android:scaleY="1.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_day"
+        android:src="@drawable/night" />
+
+    <TextView
+        android:id="@+id/tv_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/josefinsans_light"
+        android:includeFontPadding="false"
+        android:minHeight="0dp"
+        android:text="22"
+        android:textColor="@android:color/white"
+        android:textSize="120sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_temp"
+        app:layout_constraintTop_toTopOf="@+id/tv_temp"
+        app:srcCompat="@drawable/degree" />
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/josefinsans_light"
+        android:text="NIGHT"
+        android:textColor="@color/yellow_label"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_temp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="120dp"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/yellow_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="120dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/yellow_label"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/josefinsans_light"
+        android:text="Details"
+        android:textColor="@color/yellow_label"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/sun_white"
+        app:layout_constraintEnd_toEndOf="@+id/tv_day_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_day_label"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/moon_white"
+        app:layout_constraintEnd_toEndOf="@+id/tv_night_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_night_label"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/tv_day_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/josefinsans_light"
+        android:text="Intermittent clouds"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_night_label"
+        app:layout_constraintEnd_toStartOf="@+id/tv_night_label"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_night_label" />
+
+    <TextView
+        android:id="@+id/tv_night_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/josefinsans_light"
+        android:text="Hazy moonlight"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_day_label"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+
+</android.support.constraint.ConstraintLayout>
