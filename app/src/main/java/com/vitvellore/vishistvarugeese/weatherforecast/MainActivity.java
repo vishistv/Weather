@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         URL weatherUrl = NetworkUtils.buildUrlForWeather();
         new FetchWeatherDetails().execute(weatherUrl);
-
+        
 
     }
 

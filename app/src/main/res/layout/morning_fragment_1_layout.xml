@@ -61,6 +61,7 @@
         android:layout_marginStart="60dp"
         android:fontFamily="@font/josefinsans_light"
         android:text="MORNING"
+        android:textAllCaps="true"
         android:textColor="@android:color/white"
         android:textSize="30sp"
         android:textStyle="normal"
